@@ -1,3 +1,4 @@
+# Exercícios do Capítulo 3
 # Exercícios do livro *Introdução à Programação com Python* — Nilo Menezes
 
 Este espaço contém as minhas resoluções dos exercícios do livro *Introdução à Programação com Python*, organizadas por capítulos para acompanhar a estrutura do livro.
