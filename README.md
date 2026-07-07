@@ -1,4 +1,3 @@
-# My Python Roadmap — Mário Romão
 # 🐍 My Python Roadmap — Mário Romão
 
 ## 🎯 Objetivo
