@@ -19,7 +19,7 @@
 while True:
     print("Vamos classificar idades entre os 0 e os 120 anos. ")
 
-    idade = int(input("Digite uma idade! Para parar coloque 999: "))
+    idade = float(input("Digite uma idade! Para parar coloque 999: "))
 
     if idade == 999:
         print("Sair do programa.")
@@ -27,7 +27,7 @@ while True:
 
     while idade < 0 or idade > 120: 
         print("Erro! A idade digitada está fora do intervalo definido. Digite uma outra! ")
-        idade = int(input("Digite uma idade, mas tem que ser entre os 0 e os 120 anos"))
+        idade = float(input("Digite uma idade, mas tem que ser entre os 0 e os 120 anos"))
     
     if idade <= 12:
         print("Criança")
@@ -38,5 +38,6 @@ while True:
     else:
         print("Idoso")  # Não temos "alucinações lógicas" aqui como o Eric M. diz, porque o "while" 
                         # define um intervalo, não aceitando nada fora dele.
+
 
 

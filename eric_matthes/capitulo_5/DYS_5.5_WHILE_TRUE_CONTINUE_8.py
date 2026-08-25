@@ -41,7 +41,7 @@ calor_extremo = 0
 soma_total_temperaturas = 0
 
 while True:
-    temperatura = int(input("Digite uma temperatura em ºC (777 para parar): "))
+    temperatura = float(input("Digite uma temperatura em ºC (777 para parar): "))
 
     if temperatura == 777:
         print("Programa encerrado!")
@@ -106,6 +106,7 @@ else:
     
 
     
+
 
 
 

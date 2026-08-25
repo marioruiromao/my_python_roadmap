@@ -1,8 +1,8 @@
 
 MINUTOS_DIA = 1440  # constante (maiúsculas = convenção Python)
 
-cigarros_por_dia = int(input("Quantos cigarros fuma por dia: "))
-anos_de_fumo = int(input("Há quantos anos fuma: "))
+cigarros_por_dia = float(input("Quantos cigarros fuma por dia: "))
+anos_de_fumo = float(input("Há quantos anos fuma: "))
 
 total_cigarros_fumados = cigarros_por_dia * (anos_de_fumo * 365)
 print(f"Total de cigarros fumados: {total_cigarros_fumados}")
@@ -45,3 +45,4 @@ print(f"Dias de vida perdidos: {dias_vida_perdida_fumantes:.2f}")
 #.2f = float com 2 casas decimais
 
 #Misturar os dois gera erros como: ValueError: Unknown format code 'd' for object of type 'float'
+

@@ -23,7 +23,7 @@
 
 
 while True:
-    nota = int(input("Escreva uma nota entre '0' e '10'. Para parar digite 99! "))
+    nota = float(input("Escreva uma nota entre '0' e '10'. Para parar digite 99! "))
 
     if nota == 99:
         print("Programa encerrado.")
@@ -33,4 +33,5 @@ while True:
         print("Valor inválido! A nota deve estar entre 0 e 10.")
     else:
         print("Nota registada com sucesso!")
+
 

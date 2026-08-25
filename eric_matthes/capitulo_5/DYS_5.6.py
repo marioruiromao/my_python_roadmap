@@ -2,7 +2,7 @@
 print("Digite idades para ver a fase da vida. Para parar, digite 777.\n")
 
 while True:
-    idade = int(input("Idade: "))
+    idade = float(input("Idade: "))
 
     if idade == 777:
         print("\nPrograma encerrado!")
@@ -24,6 +24,7 @@ while True:
         print("Adulto\n")
     else:
         print("Idoso\n")
+
 
 
 

@@ -26,7 +26,7 @@
 
 while True:
     print("Diga uma temperatura no intervalo de -50 a 50 graus. Vamos classificá-la!")
-    temperatura = int(input("Digite a temperatura em graus Celsius. Para parar escreva '99':"))
+    temperatura = float(input("Digite a temperatura em graus Celsius. Para parar escreva '99':"))
 
     if temperatura == 99:
         print("Programa encerrado!")
@@ -36,7 +36,7 @@ while True:
     # Classificação = if / elif / else
     while temperatura < -50 or temperatura > 50: # Este while é um filtro. Não é uma classificação, serve apenas para validação.
         print("Erro! Temperatura fora dos parâmetros!")
-        temperatura = int(input("Digite uma nova temperatura dentro do intervalo definido: "))
+        temperatura = float(input("Digite uma nova temperatura dentro do intervalo definido: "))
         
     if temperatura <= 5:    # NBH - Se os "if/elif" estivessem indentados dentro do "while", o programa nunca mais parava.
         print("Está muito frio!")

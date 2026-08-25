@@ -54,7 +54,7 @@ soma_total_idades = 0       # Acumulador para calcular a média das idades
 
 while True:
     print("\nEste programa vai pedir um conjunto de idades e classificá-las.")
-    idade = int(input("Digite a idade pretendida (999 para parar): "))
+    idade = float(input("Digite a idade pretendida (999 para parar): "))
 
     if idade == 999:
         print("O programa para.")
@@ -107,3 +107,4 @@ if idades_total > 0:
 
 else:
     print("\nNão foram introduzidas idades válidas.")
+

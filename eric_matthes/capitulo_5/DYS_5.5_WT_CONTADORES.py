@@ -43,7 +43,7 @@ maus = 0
 while True:
     print("Programa: classificação das notas de alunos! Valores: entre '0' e '20'. Para parar, digite '999'")
 
-    notas = int(input("Classificação do aluno. Introduza a nota do aluno - de '0' a '20': "))
+    notas = float(input("Classificação do aluno. Introduza a nota do aluno - de '0' a '20': "))
 
     # SENTINELA — parar o programa
     if notas == 999:
@@ -53,7 +53,7 @@ while True:
     # VALIDAÇÃO — repetir até estar certo. Só são aceites valores dentro deste intervalo, caso contrário continua a REPETIR.
     while notas < 0 or notas > 20: 
         print("Erro! Nota inválida! Introduza novamente.")
-        notas = int(input("Volte a introduzir uma nota de '0' a '20': "))
+        notas = float(input("Volte a introduzir uma nota de '0' a '20': "))
 
     # CONTADOR PRINCIPAL — só conta notas válidas (total_notas). Incrementa uma vez por nota válida, LOGO APÓS a VALIDAÇÃO.
     total_notas += 1
@@ -77,6 +77,7 @@ print("\n--- ESTATÍSTICAS FINAIS ---")
 print(f"Total de notas introduzidas: {total_notas}")
 print(f"Notas 'Excelente': {excelentes}")
 print(f"Notas 'Mau': {maus}")
+
 
 
 

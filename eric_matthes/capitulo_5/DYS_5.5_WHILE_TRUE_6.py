@@ -60,7 +60,7 @@ nota_mais_baixa = 20        # SUPER IMPORTANTE: começa no máximo possível a n
 while True:
     print("Este programa vai registar as notas dos alunos, e analisá-las! Os valores variam entre '0' e '20'")
 
-    notas = int(input("Introduza todas as notas dos alunos: "))
+    notas = float(input("Introduza todas as notas dos alunos: "))
 
     # SENTINELA
     if notas == 999:
@@ -70,7 +70,7 @@ while True:
     # VALIDAÇÃO
     while notas < 0 or notas > 20:
         print("Nota inválida!")
-        notas = int(input("A nota que inseriu não está no intervalo definido. Corrija! "))
+        notas = float(input("A nota que inseriu não está no intervalo definido. Corrija! "))
 
     # CONTADOR PRINCIPAL (só conta notas válidas)
     total_notas += 1            # SUPER IMPORTANTE: O contador dentro da validação NÃO conta notas válidas (SE ESTIVESSE INDENTADO AO "WHILE"). 
@@ -112,3 +112,4 @@ print(f"A nota mais alta foi: {nota_mais_alta} valores")
 print(f"A nota mais baixa foi: {nota_mais_baixa} valores")
 print(f"Percentagem de notas 'Excelente': {(notas_excelente / total_notas) * 100:5.2f}%")
 print(f"Percentagem de notas 'Mau': {(notas_mau / total_notas) * 100:5.2f}%")
+

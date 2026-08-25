@@ -1,8 +1,8 @@
 # Constante (em maiúsculas, como manda a convenção)
 MINUTOS_DIA = 1440
 
-cigarros_por_dia = int(input("Quantos cigarros fuma por dia: "))
-anos_de_fumo = int(input("Há quantos anos fuma: "))
+cigarros_por_dia = float(input("Quantos cigarros fuma por dia: "))
+anos_de_fumo = float(input("Há quantos anos fuma: "))
 
 
 total_cigarros_fumados = cigarros_por_dia * (anos_de_fumo * 365)
@@ -36,3 +36,4 @@ print(f"Olá, {nome}! É um prazer te conhecer.")
 #0 → preenche com zeros
 #2 → largura mínima de 2 caracteres
 #d → inteiro
+

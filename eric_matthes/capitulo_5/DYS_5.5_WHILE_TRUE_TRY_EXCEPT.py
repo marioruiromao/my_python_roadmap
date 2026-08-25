@@ -10,7 +10,7 @@ while True:
     #     O "try/except" é o guarda-costas do teu programa. Ele impede que o programa morra ANTES da validação.
     while True:
         try:
-            temperatura = int(input("Introduza as temperaturas em graus Celsius: "))
+            temperatura = float(input("Introduza as temperaturas em graus Celsius: "))
             break   # Se for número válido, sai deste while
         except:
             print("Erro! Introduza apenas números inteiros. Tente novamente.")
@@ -24,7 +24,7 @@ while True:
     while temperatura < -30 or temperatura > 50:
         print("Erro! Temperatura fora dos parâmetros (-30 a 50).")
         try:
-            temperatura = int(input("Introduza uma temperatura válida: "))
+            temperatura = float(input("Introduza uma temperatura válida: "))
         except:
             print("Erro! Introduza apenas números inteiros.")
             continue  # Volta ao início da validação
@@ -55,3 +55,4 @@ print("\nEstatísticas finais das temperaturas registadas:")
 print(f"Total de temperaturas introduzidas: {total_temperaturas}")
 print(f"Temperaturas 'muito frias': {muito_frio}")
 print(f"Temperaturas 'muito quentes': {muito_quente}")
+

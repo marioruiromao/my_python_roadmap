@@ -24,7 +24,7 @@
 #   - Usa break para parar quando o utilizador digitar 99.
 
 while True:
-    idade = int(input("Diga, por favor, a sua idade! Para parar digite '99': "))
+    idade = float(input("Diga, por favor, a sua idade! Para parar digite '99': "))
 
     # Se o utilizador digitar 99, o programa deve parar imediatamente.
     if idade == 99:
@@ -36,7 +36,7 @@ while True:
 
     while idade < 0 or idade > 120:
         print("Introduziu um valor errado!")
-        idade = int(input("Diga, por favor, a sua idade novamente!: "))
+        idade = float(input("Diga, por favor, a sua idade novamente!: "))
     # Este bloco é um bloco à parte, por isso está alinhado com o if e os elif.
     # A partir daqui, a idade é garantidamente válida (0 a 120).
     # Agora classifico a idade por faixas etárias.
@@ -51,3 +51,4 @@ while True:
 
     elif idade <= 120:
         print("Sénior") # SUPER DICA: Assim sei "Eu sei exatamente o que estou a aceitar" e evita o que o Eric Matthes chama de “alucinações lógicas”.
+

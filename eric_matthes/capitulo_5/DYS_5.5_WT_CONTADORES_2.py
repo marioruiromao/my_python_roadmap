@@ -43,7 +43,7 @@ muito_quente = 0
 while True:
     print("Vamos classificar as suas temperaturas. Para interromper, digite: '999' ")
 
-    temperatura = int(input("Introduza as temperaturas em graus Celsius: "))
+    temperatura = float(input("Introduza as temperaturas em graus Celsius: "))
 
     if temperatura == 999: # SENTINELA
         print("Contagem interrompida!")
@@ -51,7 +51,7 @@ while True:
 
     while temperatura < -30 or temperatura > 50:
         print("Erro! Temperaturas fora dos parâmetros!")
-        temperatura = int(input("Os valores da temperatura têm de estar dentro do intervalo definido! "))
+        temperatura = float(input("Os valores da temperatura têm de estar dentro do intervalo definido! "))
     
     total_temperaturas += 1
     
@@ -76,6 +76,7 @@ print("\nEstatísticas finais das temperaturas registadas: ")
 print(f"O total das temperaturas introduzidas foram: {total_temperaturas} temperaturas. ")
 print(f"Foram introduzidas {muito_frio} temperaturas consideradas muito frias. ")
 print(f"Foram introduzidas {muito_quente} temperaturas consideradas muito quentes. ")
+
 
 
 
